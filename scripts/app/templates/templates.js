@@ -2,6 +2,12 @@
 }); // end of requireJS define() call 
 */
 
+alert("From templates.js: jQuery $ is not seen in templates.js");
+alert($(this).attr('title'));
+
+alert('From templates.js: if I say define(["jquery", "jquery-ui"], function(){... myTemplates cannot be seen in "main.js". If you check Firebug, you"ll see it.');
+
+define(["jquery-ui"], function () {
 function myTemplates(){
 	this.test = function(){
 		alert('hey test');
@@ -37,4 +43,4 @@ function myTemplates(){
 
 }; // end of 'myTemplates()' constructor
 
-
+});
