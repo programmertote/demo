@@ -1,11 +1,3 @@
-/* We'll use 'require.js' to keep things modular */
-
-// Ref: https://github.com/requirejs/example-jquery-shim
-// https://github.com/requirejs/example-jquery-cdn
-// http://requirejs.org/docs/jquery.html#shimconfig
-// http://requirejs.org/docs/api.html#pathsfallbacks
-// http://stackoverflow.com/questions/12113172/how-do-i-use-jquery-ui-with-requirejs
-
 requirejs.config({
 
 	"baseUrl": "scripts/lib",
@@ -29,5 +21,5 @@ requirejs.config({
 
 });
 
-requirejs(["app/main"]);
+requirejs(["app/main", "templates"]);
 
